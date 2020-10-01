@@ -73,7 +73,7 @@ function drawMap(container_width) {
       .attr("xlink:href", function(d) {
         	return d.properties.link
       })
-      .attr('target','_blank')
+      .attr('target','_parent')
     	.append("path")
     	.attr("d", path)
     	.attr("class", function(d) {
@@ -106,7 +106,7 @@ function drawMap(container_width) {
       .attr("stroke", "#ec008b")
     var dcText = svg.append("a")
       .attr("xlink:href", buildLink("District of Columbia"))
-      .attr('target','_blank')
+      .attr('target','_parent')
       .data(dcData)
       .append("text")
       .text(function(d) { 
@@ -183,7 +183,7 @@ function drawMap(container_width) {
           .attr('class', 'dropdown-container')
           .append("select")
          // .attr("onChange", "window.location.href=this.value")
-          .attr("onChange", "window.open(this.value, '_blank') ")
+          .attr("onChange", "window.open(this.value, '_parent') ")
           .selectAll("option")
           .data(json.features)
           .enter()
