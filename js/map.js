@@ -198,6 +198,9 @@ function drawMap(container_width) {
           .attr("disabled", "disabled")
           .attr("hidden", "hidden")
 
+      tooltip.append("div")
+      .attr("id","natlview")
+      .html("<span>or</span> <a href = \"https://www.urban.org/policy-centers/research-action-lab/projects/sizing-federal-rental-assistance/national\" target = \"_parent\">view national data</a>")
 
   });
 

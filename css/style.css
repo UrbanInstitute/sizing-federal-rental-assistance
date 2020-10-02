@@ -156,3 +156,17 @@ select {
     width: 100%;
   }
 }
+
+
+#natlview{
+  font-size: 19px;
+  font-family: Lato;
+  font-style: italic;
+  color: #1696d2 !important;
+}
+#natlview span{
+  color: #353535;
+}
+#natlview a{
+  color: #1696d2;
+}
